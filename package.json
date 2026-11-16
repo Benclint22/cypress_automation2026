@@ -12,7 +12,11 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:open": "cypress open",
+    "test:headless": "cypress run",
+    "test:login": "cypress run --spec 'cypress/e2e/Tests/homepage_login.cy.js'",
+    "test:dashboard": "cypress run --spec 'cypress/e2e/Tests/dashboard_page.cy.js'",
+    "test:all": "cypress run --spec 'cypress/e2e/Tests/*.cy.js'"
   },
   "devDependencies": {
     "@faker-js/faker": "^10.6.0",
