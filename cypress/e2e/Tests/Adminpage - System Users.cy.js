@@ -244,7 +244,7 @@ describe('OrangeHRM Admin - System Users Page (24-Test Suite)', () => {
 
   // ==========================================
   // SECTION 3: EDIT, DELETE & SECURITY (7 Tests)
-  // ==========================================
+  // =====================================
 
   it('TC-18: Update User - Edit newly created user status to Disabled', () => {
     const tempUser = `qa_edit_${Date.now()}`;
