@@ -4,7 +4,7 @@ describe('OrangeHRM PIM - Configuration Page (8-Test Suite)', () => {
 
   beforeEach(() => {
     // Standard Login
-    cy.visit(`${baseUrl}/web/index.php/auth/login`);
+    cy.visit('/web/index.php/pim/configurePim');
     cy.get('input[name="username"]').type('Admin');
     cy.get('input[name="password"]').type('admin123');
     cy.get('button[type="submit"]').click();
